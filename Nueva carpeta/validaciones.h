@@ -1,0 +1,1 @@
+int validarString(char* palabra);

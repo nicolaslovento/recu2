@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1532273299 source:c:\users\nico\desktop\2parcial\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1532200769 c:\users\nico\desktop\2parcial\arraylist.h
+
+1532275319 source:c:\users\nico\desktop\2parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"parser.h"
+	"empleados.h"
+
+1532202520 c:\users\nico\desktop\2parcial\empleados.h
+
+1532275319 c:\users\nico\desktop\2parcial\parser.h
+
+1532203181 source:c:\users\nico\desktop\2parcial\empleados.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"empleados.h"
+
+1532275327 source:c:\users\nico\desktop\2parcial\parser.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"parser.h"
+	"empleados.h"
+
