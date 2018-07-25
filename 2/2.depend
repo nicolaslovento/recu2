@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1532273299 source:c:\users\nico\desktop\utn\2\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1532200769 c:\users\nico\desktop\utn\2\arraylist.h
+

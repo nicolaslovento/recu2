@@ -1,0 +1,97 @@
+//Funcion que filtra.
+int funcionQueFiltra(void* empleadoAux)
+{
+    eEmpleado* e1=(eEmpleado*)empleadoAux;
+    if(empleadoAux!=NULL)
+    {
+        if(e1->edad>30 && strcmp(e1->profesion,"programador")==0)
+        {
+            return 1;
+        }
+    }
+
+    return 0;
+}
+
+//constructor (sin parametro)
+
+void* new_Empleado()
+{
+    eEmpleado* empleado=NULL;
+    empleado=(eEmpleado*)malloc(sizeof(eEmpleado));
+    if(empleado!=NULL)
+    {
+        return empleado;
+    }
+    return empleado;
+}
+
+//get id
+
+int getId(ArrayList* eArray)
+{
+    int retorno;
+    retorno=(eArray->size)+1;
+    return retorno;
+}
+
+//Cargar Desde Texto
+
+int parserEmpleados(ArrayList* arrayEmpleados)
+{
+    FILE* archivo;
+    archivo=fopen("data.csv","r");
+    eEmpleado* empleadoNew;
+    int cant;
+    char id[10];
+    char nombre[50];
+    char sueldo[50];
+    char edad[50];
+    char profesion[50];
+    do
+    {
+
+        empleadoNew=new_Empleado();
+        cant=fscanf(archivo,"%[^,],%[^,],%[^,],%[^,],%[^\n]",id,nombre,sueldo,edad,profesion);
+        if(cant==5)
+        {
+
+            empleadoNew->id=atoi(id);
+            strcpy(empleadoNew->nombre,nombre);
+            empleadoNew->sueldo=stringAFloat(sueldo);
+            empleadoNew->edad=atoi(edad);
+            strcpy(empleadoNew->profesion,profesion);
+
+            al_add(arrayEmpleados,empleadoNew);
+        }
+
+
+
+    }while(!feof(archivo));
+
+    fclose(archivo);
+}
+
+
+//guardar en texto
+
+int guardarEmpleados(ArrayList* filtro)
+{
+    FILE* archivo;
+    archivo=fopen("out.csv","w");
+    int cant,len,i;
+    len=al_len(filtro);
+    eEmpleado* unEmpleado;
+    for(i=0;i<len;i++)
+    {
+        unEmpleado=al_get(filtro,i);
+        if(unEmpleado!=NULL)
+        {
+          cant=fprintf(archivo,"%d,%s,%.2f,%d,%s\n",unEmpleado->id,unEmpleado->nombre,unEmpleado->sueldo,unEmpleado->edad,unEmpleado->profesion);
+        }
+
+
+    }
+
+     fclose(archivo);
+}
