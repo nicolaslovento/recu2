@@ -1,0 +1,98 @@
+//set y get
+
+
+int setId(Cliente* pCliente,int id)
+{
+    int retorno=0;
+    if(pCliente!=NULL && id>0)
+    {
+        pCliente->id=id;
+        retorno=1;
+    }
+    return retorno;
+}
+
+int setGenero(Cliente* pCliente,char* genero)
+{
+    int retorno=0;
+    if(pCliente!=NULL  )
+    {
+        strcpy(pCliente->genero,genero);
+        retorno=1;
+    }
+    return retorno;
+}
+
+int setProfesion(Cliente* pCliente,char* profesion)
+{
+    int retorno=0;
+    if(pCliente!=NULL && profesion!=NULL)
+    {
+        strcpy(pCliente->profesion,profesion);
+        retorno=1;
+    }
+    return retorno;
+}
+
+int setNacionalidad(Cliente* pCliente,char* nacionalidad)
+{
+    int retorno=0;
+    if(pCliente!=NULL && nacionalidad!=NULL)
+    {
+        strcpy(pCliente->nacionalidad,nacionalidad);
+        retorno=1;
+    }
+    return retorno;
+}
+
+
+int setUsuario(Cliente* pCliente,char* usuario)
+{
+    int retorno=0;
+    if(pCliente!=NULL && usuario!=NULL)
+    {
+        strcpy(pCliente->usuario,usuario);
+        retorno=1;
+    }
+    return retorno;
+}
+
+int setEmail(Cliente* pCliente,char* email)
+{
+    int retorno=0;
+    if(pCliente!=NULL && email!=NULL)
+    {
+        strcpy(pCliente->email,email);
+        retorno=1;
+    }
+    return retorno;
+}
+
+int setApellido(Cliente* pCliente,char* apellido)
+{
+    int retorno=0;
+    if(pCliente!=NULL && apellido!=NULL)
+    {
+        strcpy(pCliente->apellido,apellido);
+        retorno=1;
+    }
+    return retorno;
+}
+
+
+int setNombre(Cliente* pCliente,char* nombre)
+{
+    int retorno=0;
+    if(pCliente!=NULL && nombre!=NULL)
+    {
+        strcpy(pCliente->nombre,nombre);
+        retorno=1;
+    }
+    return retorno;
+}
+
+char* getNombre(-* aux)
+{
+	return aux->nombre;
+
+}

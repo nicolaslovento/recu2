@@ -1,0 +1,59 @@
+//mostrar uno
+int mostrarUno(-* aux)
+{
+	if(aux!=NULL)
+	{
+    	printf("%d %10s %15s   %25s      %s\n ",aux->id,aux->nombre,aux->apellido,aux->email,aux->nacionalidad);
+    }
+}
+
+//mostrar todos
+
+void mostrarTodos(ArrayList* this)
+{
+    int i;
+    int contador=50;
+    -* aux;
+
+    printf("id | nombre   |    apellido     |             email           |    nacionalidad   \n");
+    for(i=0;i<al_len(this);i++)
+    {
+        aux=al_get(this,i);
+        if(aux!=NULL)
+        {
+            mostrarUno(aux);
+        }
+
+        if(i==contador)
+        {
+            contador=contador+50;
+            system("pause");
+            system("cls");
+            printf("id | nombre   |    apellido     |             email           |    nacionalidad   \n");
+
+        }
+
+    }
+
+}
+
+
+void mostrarPorId(ArrayList* this)
+{
+     int id,index;
+    -* aux;
+
+    printf("Ingrese id: ");
+    scanf(" %d",&id);
+    index=getauxIndexById(this,id);
+    if(index>-1)
+    {
+        aux=al_get(this,index);
+        mostrarUno(aux);
+
+    }else
+    {
+       printf("No se escuentra el id.\n");
+    }
+
+}

@@ -1,0 +1,43 @@
+
+
+//constructor (sin parametro)
+
+void* new_Empleado()
+{
+    -* aux=NULL;
+    aux=(-*)malloc(sizeof(-));
+    if(aux!=NULL)
+    {
+        return aux;
+    }
+    return aux;
+}
+
+//get id
+
+int getId(ArrayList* eArray)
+{
+    int retorno;
+    retorno=(eArray->size)+1;
+    return retorno;
+}
+
+
+//Get index por id
+
+int getClienteIndexById(ArrayList* this,int id)
+{
+    int i;
+    -* aux;
+    int index=-1;
+
+    for(i=0;i<al_len(this);i++)
+    {
+        aux=al_get(this,i);
+        if(aux->id==id)
+        {
+            index=al_indexOf(this,aux);
+        }
+    }
+    return index;
+}

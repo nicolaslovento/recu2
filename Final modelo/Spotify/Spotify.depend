@@ -1,0 +1,47 @@
+# depslib dependency file v1.0
+1533044832 source:c:\users\nico\desktop\final modelo\spotify\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1533045268 c:\users\nico\desktop\final modelo\spotify\arraylist.h
+
+1533052572 source:c:\users\nico\desktop\final modelo\spotify\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"usuarios.h"
+	"temas.h"
+	"parser.h"
+
+1533050355 c:\users\nico\desktop\final modelo\spotify\usuarios.h
+
+1533052572 c:\users\nico\desktop\final modelo\spotify\temas.h
+
+1533051450 c:\users\nico\desktop\final modelo\spotify\parser.h
+
+1533052587 source:c:\users\nico\desktop\final modelo\spotify\temas.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"usuarios.h"
+	"parser.h"
+	"temas.h"
+
+1533050343 source:c:\users\nico\desktop\final modelo\spotify\usuarios.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"temas.h"
+	"usuarios.h"
+
+1533051450 source:c:\users\nico\desktop\final modelo\spotify\parser.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"usuarios.h"
+	"temas.h"
+	"parser.h"
+

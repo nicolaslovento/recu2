@@ -1,0 +1,49 @@
+# depslib dependency file v1.0
+1532273299 source:c:\users\nico\desktop\final modelo\mybook\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1532200769 c:\users\nico\desktop\final modelo\mybook\arraylist.h
+
+1533083776 source:c:\users\nico\desktop\final modelo\mybook\mensajes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"usuarios.h"
+	"mensajes.h"
+
+1533083776 c:\users\nico\desktop\final modelo\mybook\usuarios.h
+
+1533083776 c:\users\nico\desktop\final modelo\mybook\mensajes.h
+
+1533083297 source:c:\users\nico\desktop\final modelo\mybook\parser.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"usuarios.h"
+	"mensajes.h"
+	"parser.h"
+
+1533083776 c:\users\nico\desktop\final modelo\mybook\parser.h
+
+1533083776 source:c:\users\nico\desktop\final modelo\mybook\usuarios.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"mensajes.h"
+	"usuarios.h"
+
+1533083776 source:c:\users\nico\desktop\final modelo\mybook\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"usuarios.h"
+	"mensajes.h"
+	"parser.h"
+

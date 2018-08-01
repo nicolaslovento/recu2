@@ -1,0 +1,119 @@
+//Cargar Desde Texto
+
+int parserEmpleados(ArrayList* this)
+{
+    FILE* pArchivo;
+    archivo=fopen("data.csv","r");
+    -* aux;
+    int cant;
+    char id[10];
+    char nombre[50];
+    char sueldo[50];
+    char edad[50];
+    char profesion[50];
+    do
+    {
+
+        aux=new_Empleado();
+        cant=fscanf(pArchivo,"%[^,],%[^,],%[^,],%[^,],%[^\n]",id,nombre,sueldo,edad,profesion);
+        if(cant==5)
+        {
+
+            aux->id=atoi(id);
+            strcpy(aux->nombre,nombre);
+            aux->sueldo=stringAFloat(sueldo);
+            aux->edad=atoi(edad);
+            strcpy(aux->profesion,profesion);
+
+            al_add(this,aux);
+        }
+
+
+
+    }while(!feof(pArchivo));
+
+    fclose(pArchivo);
+}
+
+
+//guardar en texto
+
+int guardarEmpleados(ArrayList* this)
+{
+    FILE* pArchivo;
+    pArchivo=fopen("out.csv","w");
+    int cant,i;
+    -* aux;
+
+    for(i=0;i<al_len(this);i++)
+    {
+        aux=al_get(this,i);
+        if(aux!=NULL)
+        {
+          cant=fprintf(archivo,"%d,%s,%.2f,%d,%s\n",aux->id,aux->nombre,aux->sueldo,aux->edad,aux->profesion);
+        }
+
+
+    }
+
+     fclose(pArchivo);
+}
+
+
+
+
+
+
+
+
+int CargarBinario(ArrayList* this)
+{
+    -* aux;
+    FILE* archivo;
+    archivo=fopen("data.bin","rb");
+    int contador=0,cant;
+
+    while(!feof(archivo))
+    {
+        aux=newEmpleado();
+        cant=fread(aux,sizeof(-),1,archivo);
+        if(cant!=1)
+        {
+            if(feof(archivo))
+            {
+                break;
+            }
+        }
+        al_add(this,aux);
+        contador++;
+
+    }
+
+
+    printf("Se cargaron %d registros de -\n",contador);
+    fclose(archivo);
+}
+
+
+int guardarBinario(ArrayList* this)
+{
+    -* aux;
+    FILE* archivo;
+    archivo=fopen("data.bin","wb");
+    int i,contador=0;
+    
+
+    for(i=0;i<al_len(this);i++)
+    {
+        aux=al_get(this,i);
+        if(clienteAux!=NULL)
+        {
+            fwrite(aux,sizeof(-),1,archivo);
+            contador++;
+        }
+    }
+    printf("Se guardaron %d registros de -\n",contador);
+    fclose(archivo);
+
+
+}

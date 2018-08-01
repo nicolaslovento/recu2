@@ -1,0 +1,42 @@
+//Ordenar por email y nombre (al_Sort)
+
+    int ordenarPorString(void* aux3,void* aux4)
+{
+    int retorno;
+    -* aux1=(-*)aux3;
+    -* aux2=(-*)aux4;
+    retorno=strcmpi(aux1->,aux2->);
+    return retorno;
+
+}
+
+int ordenarPorNombre(void* cliente1,void* cliente2)
+{
+    int retorno;
+    Cliente* c1=(Cliente*)cliente1;
+    Cliente* c2=(Cliente*)cliente2;
+    retorno=strcmpi(c1->nombre,c2->nombre);
+    return retorno;
+
+}
+
+//validar string 
+
+int validarString(char* palabra)
+{
+    int retorno=0;
+    int i;
+    
+    for(i=0;i<strlen(palabra);i++)
+    {
+        if(isalpha(palabra[i])==0)
+        {
+        retorno=1;
+        break;
+        }
+    }
+
+
+    return retorno;
+}
+
