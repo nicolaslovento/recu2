@@ -18,13 +18,13 @@
 
 1532275319 c:\users\nico\desktop\2parcial\parser.h
 
-1532203181 source:c:\users\nico\desktop\2parcial\empleados.c
+1532453343 source:c:\users\nico\desktop\2parcial\empleados.c
 	<stdio.h>
 	<stdlib.h>
 	"ArrayList.h"
 	"empleados.h"
 
-1532275327 source:c:\users\nico\desktop\2parcial\parser.c
+1532275493 source:c:\users\nico\desktop\2parcial\parser.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>

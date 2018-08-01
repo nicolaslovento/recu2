@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1532273299 source:c:\users\nico\desktop\utn\parcial2completo\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1532200769 c:\users\nico\desktop\utn\parcial2completo\arraylist.h
+
+1532989319 source:c:\users\nico\desktop\utn\parcial2completo\letras.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"ArrayList.h"
+	"parser.h"
+	"letras.h"
+
+1532989198 c:\users\nico\desktop\utn\parcial2completo\letras.h
+
+1532989349 source:c:\users\nico\desktop\utn\parcial2completo\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"letras.h"
+	"parser.h"
+
+1532556004 c:\users\nico\desktop\utn\parcial2completo\parser.h
+
+1532556900 source:c:\users\nico\desktop\utn\parcial2completo\parser.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"letras.h"
+	"parser.h"
+

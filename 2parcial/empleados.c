@@ -22,10 +22,13 @@ int funcionQueFiltra(void* empleadoAux)
 
 void* new_Empleado()
 {
-    eEmpleado* empleado;
+    eEmpleado* empleado=NULL;
     empleado=(eEmpleado*)malloc(sizeof(eEmpleado));
+    if(empleado!=NULL)
+    {
+        return empleado;
+    }
     return empleado;
-
 }
 
 void mostrarUnEmpleado(eEmpleado* empleado)

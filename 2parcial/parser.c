@@ -25,10 +25,10 @@ int parserEmpleados(ArrayList* arrayEmpleados)
         if(cant==5)
         {
 
-            empleadoNew->id=stringAentero(id);
+            empleadoNew->id=atoi(id);
             strcpy(empleadoNew->nombre,nombre);
             empleadoNew->sueldo=stringAFloat(sueldo);
-            empleadoNew->edad=stringAentero(edad);
+            empleadoNew->edad=atoi(edad);
             strcpy(empleadoNew->profesion,profesion);
 
             al_add(arrayEmpleados,empleadoNew);
